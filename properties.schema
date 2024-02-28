@@ -51,7 +51,7 @@
     "_supportedLayout": {
       "type": "string",
       "required": true,
-      "enum": ["full-width", "half-width", "both"],
+      "enum": ["full-width"],
       "default": "full-width",
       "editorOnly": true
     },
@@ -78,7 +78,7 @@
             "title": "Título do item",
             "inputType": "Text",
             "validators": [],
-            "translatable": true
+            "translatable": true,
           },
           "_graphic": {
             "type": "object",
@@ -86,12 +86,11 @@
             "title": "Image",
             "properties": {
               "large": {
-                "type": "object",
-                "required": false,
-                "default": "",
-                "inputType": "Asset:image",
-                "validators": [],
-                "help": "The large sized image for desktop devices"
+                  "type": "string",
+                  "required": true,
+                  "default": "",
+                  "inputType": "Asset:image",
+                  "validators": ["required"]
               }
             }
           }

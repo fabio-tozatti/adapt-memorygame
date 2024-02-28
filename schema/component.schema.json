@@ -15,6 +15,9 @@
           "type": "string",
           "title": "Supported layout",
           "default": "full-width",
+          "enum": [
+            "full-width"
+          ],
           "_adapt": {
             "editorOnly": true
           }
@@ -22,7 +25,7 @@
         "instruction": {
           "type": "string",
           "title": "Instrução",
-          "default": "Selecione o item do lado esquerdo, depois selecione o item do lado direito que corresponda ao esquerdo.",
+          "default": "Encontre os pares das imagens.",
           "_adapt": {
             "translatable": true
           }
@@ -58,12 +61,14 @@
                 "title": "Image",
                 "properties": {
                   "large": {
-                    "type": "object",
-                    "required": false,
-                    "default": "",
-                    "inputType": "Asset:image",
-                    "validators": [],
-                    "help": "The large sized image for desktop devices"
+                    "type": "string",
+                    "isObjectId": true,
+                    "title": "Large",
+                    "description": "The large sized image for desktop devices",
+                    "_backboneForms": {
+                      "type": "Asset",
+                      "media": "image"
+                    }
                   }
                 }
               }
