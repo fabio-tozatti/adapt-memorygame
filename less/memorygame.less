@@ -1,0 +1,83 @@
+.memorygame-inner {
+    .memory-game {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+      }
+      
+      .mg-card {
+        background: #b3b3b3;
+        font-size: 0;
+        color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 2px 20px 0 rgba(255,255,255,0.02);
+        padding: 10px;
+      }
+      
+      .mg-card:active {
+        transform: scale(0.97);
+        transition: transform .2s;
+      }
+      
+      .mg-card.flip {
+        cursor: default;
+        animation-name: flipInY;
+        -webkit-backface-visibility: visible !important;
+        backface-visibility: visible !important;
+        animation-duration: .75s;
+      }
+
+      .mg-card img {
+        opacity: 0;
+      }
+
+      .mg-card.flip img {
+        opacity: 1;
+      }
+      
+      .front-face,
+      .back-face {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        position: absolute;
+        border-radius: 5px;
+        background: #1C7CCC;
+        backface-visibility: hidden;
+      }
+      
+      .front-face {
+        transform: rotateY(180deg);
+      }
+      
+}
+
+@keyframes flipInY {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0
+    }
+
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        animation-timing-function: ease-in
+    }
+
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg)
+    }
+
+    to {
+        transform: perspective(400px)
+    }
+}

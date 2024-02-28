@@ -1,0 +1,12 @@
+<div class="component-inner memorygame-inner">
+    {{> component this}}
+    <div class="component-widget">
+        <section class="memory-game">
+             {{#each _items}}
+                <div class="mg-card" data-framework="{{ this._graphic.large }}">
+                    <img src="{{ this._graphic.large }}" alt="{{ this._graphic.alt }}">
+                </div>
+            {{/each}}
+        </section>
+    </div>
+</div>

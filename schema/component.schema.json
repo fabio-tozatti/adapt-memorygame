@@ -1,0 +1,76 @@
+{
+  "$anchor": "hello-pando-component",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$merge": {
+    "source": {
+      "$ref": "component"
+    },
+    "with": {
+      "required": [
+        "_items"
+      ],
+      "properties": {
+        "_supportedLayout": {
+          "type": "string",
+          "title": "Supported layout",
+          "default": "full-width",
+          "_adapt": {
+            "editorOnly": true
+          }
+        },
+        "instruction": {
+          "type": "string",
+          "title": "Instrução",
+          "default": "Selecione o item do lado esquerdo, depois selecione o item do lado direito que corresponda ao esquerdo.",
+          "_adapt": {
+            "translatable": true
+          }
+        },
+        "_setCompletionOn": {
+          "type": "string",
+          "title": "Set completion on:",
+          "description": "Whether completion is based on the learner having viewed all the items - or just having viewed the component",
+          "default": "allItems",
+          "enum": [
+            "inview",
+            "allItems"
+          ],
+          "_backboneForms": "Select"
+        },
+        "_items": {
+          "type": "array",
+          "title": "Items",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Título do item",
+                "default": "",
+                "_adapt": {
+                  "translatable": true
+                }
+              },
+              "_graphic": {
+                "type": "object",
+                "required": false,
+                "title": "Image",
+                "properties": {
+                  "large": {
+                    "type": "string",
+                    "required": false,
+                    "default": "",
+                    "inputType": "Asset:image",
+                    "validators": [],
+                    "help": "The large sized image for desktop devices"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

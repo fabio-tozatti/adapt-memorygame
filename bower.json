@@ -1,0 +1,29 @@
+{
+  "name": "adapt-pando-memorygame",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zatweb/adapt-memorygame.git"
+  },
+  "framework": ">=5.15",
+  "version": "0.2.3",
+  "displayName": "Memory Game",
+  "component": "memorygame",
+  "description": "Component criado para teste de criação de component",
+  "main": "js/memorygame.js",
+  "keywords": [
+    "adapt-component",
+    "adapt-plugin"
+  ],
+  "authors": [
+    "Pando"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/zatweb/adapt-memorygame.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
