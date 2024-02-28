@@ -15,7 +15,7 @@ define([
             this.firstCard = null;
             this.secondCard = null;
             this.cards = $('.mg-card');
-            this.totalPairs = $('.mg-card').length / 2;
+            this.totalPairs = $('.mg-card').length;
             this.pairsFound = 0;
 
             this.shuffleCards();
