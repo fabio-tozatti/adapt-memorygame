@@ -86,7 +86,7 @@
             "title": "Image",
             "properties": {
               "large": {
-                "type": "string",
+                "type": "object",
                 "required": false,
                 "default": "",
                 "inputType": "Asset:image",
