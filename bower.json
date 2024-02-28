@@ -5,7 +5,7 @@
     "url": "https://github.com/zatweb/adapt-memorygame.git"
   },
   "framework": ">=5.15",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "displayName": "Memory Game",
   "component": "memorygame",
   "description": "Component criado para teste de criação de component",
