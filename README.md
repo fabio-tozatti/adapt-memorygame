@@ -26,7 +26,7 @@ Contributions to the project are welcome! If you'd like to contribute, please fo
 - Submit a pull request detailing the changes you've made and any relevant information for review.
 
 ### License:
-TLicença MIT
+Licença MIT
 
 Copyright (c) 2024 Pando
 
