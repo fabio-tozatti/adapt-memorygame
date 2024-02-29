@@ -26,7 +26,4 @@ SOFTWARE.
 ### Contact:
 For any questions, suggestions, or feedback, feel free to reach out to the project maintainers through the [issue tracker](https://github.com/zatweb/adapt-memorygame/issues).
 
----
-
-Feel free to adapt and customize this text to fit the specifics of your project!
 
