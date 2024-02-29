@@ -1,4 +1,4 @@
-## Project Description: Word Search Game for Adapt Learning Tool
+## Word Search Game for Adapt Learning Tool
 
 ### Overview:
 This repository hosts a word search game developed specifically for the Adapt Learning tool. The game is designed to provide an engaging and interactive learning experience for users while leveraging the capabilities of Adapt Learning for easy integration into e-learning courses.
