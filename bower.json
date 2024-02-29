@@ -2,7 +2,7 @@
   "name": "adapt-pando-memorygame",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zatweb/adapt-memorygame.git"
+    "url": "https://github.com/fabio-tozatti/adapt-memorygame.git"
   },
   "framework": ">=5.15",
   "version": "0.2.7",
@@ -18,7 +18,7 @@
     "Pando"
   ],
   "license": "GPL-3.0",
-  "homepage": "https://github.com/zatweb/adapt-memorygame.git",
+  "homepage": "https://github.com/fabio-tozatti/adapt-memorygame.git",
   "ignore": [
     "**/.*",
     "node_modules",
